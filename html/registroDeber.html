@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="../css/registroDeber.css">
+</head>
+
+<body>
+    <div class="container">
+        <header></header>
+        <nav></nav>
+        <section>
+            <div id="miApp">
+                <div class="cuadroRegistro">
+                    <h1>Registro de Estudiantes</h1>
+                    <label for="inp_nombre">Nombre:</label>
+                    <input id="inp_nombre" type="text" v-model="nombre">
+                    <label for="inp_apellido">Apellido:</label>
+                    <input id="inp_apellido" type="text" v-model="apellido">
+                    <label for="inp_edad">Edad:</label>
+                    <input id="inp_edad" type="text" v-model="edad">
+                    <label for="inp_ciudad">Ciudad:</label>
+                    <input id="inp_ciudad" type="text" v-model="ciudad">
+                    <button v-on:click="agregarEstudiante">Guardar</button>
+                </div>
+                <br>
+                <div class="tablaEstudiantes">
+                    <h1>Lista de Estudiantes</h1>
+                    <ul>
+                        <li v-for="({nombre, apellido, edad, ciudad}, index) in estudiantesRegistrados">
+                            <span>{{nombre}} - {{apellido}} - {{edad}} - {{ciudad}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+        <script src="../js/registroDeber.js"></script>
+    </div>
+
+</body>
+
+</html>

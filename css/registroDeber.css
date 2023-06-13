@@ -1,0 +1,52 @@
+body{
+    background-color: #C9F2C7;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuadroRegistro{
+    display: grid;
+    width: 600px;
+    background-color: #629460;
+    color: white;
+    border-radius: 9px;
+    box-shadow: 10px 10px 10px -5px #243119;
+}
+.cuadroRegistro label{
+    margin: 20px 20px 5px 22px;
+    font-weight: 750;
+    font-size: 17px;
+}
+.cuadroRegistro input{
+    margin: 0px 20px;
+    background-color: #BBEFB4;
+}
+.cuadroRegistro button{
+    margin: 15px 260px;
+    border-radius: 20px;
+    font-weight: 750;
+    background-color: #243119;
+    border-color: #ACECA1;
+    color: white;
+}
+.cuadroRegistro button:hover{
+    background-color: #ACECA1;
+    border-color: #243119;
+    color: #243119;
+}
+h1 {
+    text-align: center;
+}
+.tablaEstudiantes {
+    display: grid;
+    background-color: #43633D;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px -5px #38442E;
+}
+.tablaEstudiantes li{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
