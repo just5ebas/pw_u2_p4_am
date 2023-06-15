@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    background-color: #81E979;
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4 , 55px);
+    /*grid-template-rows: repeat(3, 75px); sirve para movernos respecto a filas*/
+    box-shadow: 15px 15px 20px 5px hsla(0, 0%, 0%, 75%);
+
+}
+
+.zero{
+    grid-column: span 2;
+}
+
+.pantalla {
+    height: 35px;
+    margin: 5px;
+    background: rgb(218, 240, 178);
+    border: 5px black inset;
+    grid-column: span 4;
+    font-size: 25px;
+    text-align: center;
+}
+
+.calculadora button{
+    background-color: #B0FE76;
+    border-radius: 10px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+    font-size: 25px;
+    box-shadow: 2px 2px 10px 1px #595A4A;
+}
+
+.calculadora button:hover{
+    background-color: #8FBB99 ;
+}

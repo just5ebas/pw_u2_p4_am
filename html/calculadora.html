@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../css/calculadora.css" />
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 style="color: #595A4A"><strong>Calculadora</strong></h1>
+    </header>
+    <nav></nav>
+    <section>
+      <div class="container">
+        
+        <div id="calculadora" class="calculadora">
+          <!-- Resultado -->
+          <div class="pantalla">
+            <label id="txtResultado">{{label}}</label>
+            <label id="labelResultado"></label>
+          </div>
+
+          <!-- Numeros -->
+          <button v-on:click="leerNumero(1)">1</button>
+          <button v-on:click="leerNumero(2)">2</button>
+          <button v-on:click="leerNumero(3)">3</button>
+          <button v-on:click="operar('+')">+</button>
+
+          <button v-on:click="leerNumero(4)">4</button>
+          <button v-on:click="leerNumero(5)">5</button>
+          <button v-on:click="leerNumero(6)">6</button>
+          <button v-on:click="operar('-')">-</button>
+
+          <button v-on:click="leerNumero(7)">7</button>
+          <button v-on:click="leerNumero(8)">8</button>
+          <button v-on:click="leerNumero(9)">9</button>
+          <button v-on:click="operar('/')">/</button>
+
+          <button v-on:click="leerNumero(0)" class="zero">0</button>
+          <button v-on:click="operar('=')">=</button>
+          <button v-on:click="operar('*')">x</button>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+    <script src="../js/calculadora.js"></script>
+  </body>
+</html>
